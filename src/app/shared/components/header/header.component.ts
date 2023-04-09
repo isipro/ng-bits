@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { of } from 'rxjs';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -7,4 +9,15 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  authService = inject(AuthService);
+
+  ngOnInit(){
+    setTimeout(() => {
+      this.authService.isLoggedIn = true;
+    }, 3000)
+  }
+
+  handleLogin(){
+    this.authService.isLoggedIn = !this.authService.isLoggedIn;
+  }
 }
