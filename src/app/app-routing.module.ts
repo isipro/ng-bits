@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'admin', component: AdminComponent },
+  { path: 'lazy', loadChildren: () => import('./features/logger/logger.module').then(m => m.LoggerModule) },
   { path: '**', component: PageNotFoundComponent}
 ];
 
