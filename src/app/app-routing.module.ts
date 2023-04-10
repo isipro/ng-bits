@@ -5,12 +5,14 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { BitsComponent } from './pages/bits/bits.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  { path: 'bits', component: BitsComponent },
   { path: 'admin', component: AdminComponent },
   { path: 'lazy', loadChildren: () => import('./features/logger/logger.module').then(m => m.LoggerModule) },
   { path: '**', component: PageNotFoundComponent}

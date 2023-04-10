@@ -11,6 +11,7 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/modules/material/material.module';
+import { BitsComponent } from './pages/bits/bits.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MaterialModule } from './shared/modules/material/material.module';
     RegisterComponent,
     AdminComponent,
     HeaderComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    BitsComponent
   ],
   imports: [
     BrowserModule,
