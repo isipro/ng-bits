@@ -1,0 +1,25 @@
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+
+    .navigation {
+        margin-right: 42px;
+        text-align: center;
+        
+        a{
+            display: inline-block;
+            width: 80px;
+            color: white;
+            font-size: 17px;
+            text-decoration: none;
+        }
+        .profile {
+            mat-icon {
+                font-size: 30px;
+                width: 42px;
+                height: 42px;
+            }
+        }
+    }
+}
+

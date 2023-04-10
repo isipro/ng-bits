@@ -1,13 +1,12 @@
-<mat-toolbar color="default">
+<mat-toolbar color="default" class="toolbar">
   <div class="logo"> logo </div>
   <div class="navigation">
     <nav>
       <a mat-button routerLink="/">home</a>
       <a mat-button routerLink="bits">bits</a>
       <a mat-button routerLink="admin">admin</a>
-      <a *ngIf="authService.isLoggedIn" mat-button routerLink="profile"> <mat-icon >person</mat-icon></a>
+      <a *ngIf="authService.isLoggedIn" mat-button routerLink="profile" class="profile"> <mat-icon >person</mat-icon></a>
       <a *ngIf="!authService.isLoggedIn" mat-icon routerLink="login">login</a>
-      <button mat-button color="primary" (click)="handleLogin()">set login</button>
     </nav>
   </div>
 </mat-toolbar>

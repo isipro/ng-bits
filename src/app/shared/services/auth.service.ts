@@ -6,15 +6,15 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class AuthService {
 
-  _isLoggedIn$ = new BehaviorSubject(false);
+  isLoggedIn$ = new BehaviorSubject(false);
 
   set isLoggedIn(val: boolean){
-    this._isLoggedIn$.next(val);
+    this.isLoggedIn$.next(val);
     console.log('setter called');
   }
 
   get isLoggedIn(){
-    return this._isLoggedIn$.getValue();
+    return this.isLoggedIn$.getValue();
   }
 
   constructor() { }
