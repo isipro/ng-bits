@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoggerComponent } from '../component/logger.component';
+import { LoggerComponent } from './component/logger.component';
 
 const routes: Routes = [{ path: '', component: LoggerComponent }];
 
